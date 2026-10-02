@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="hbld-fuente-multisalida" name="HBLD">
+    <mxGraphModel dx="2550" dy="1405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontColor=#16324F;fontSize=24;fontStyle=1;" value="DIAGRAMA DE BLOQUES DE ALTO NIVEL (HBLD)" vertex="1">
+          <mxGeometry height="42" width="1100" x="55" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontColor=#5C7184;fontSize=15;" value="Fuente de alimentación multisalida" vertex="1">
+          <mxGeometry height="28" width="750" x="55" y="83" as="geometry" />
+        </mxCell>
+        <mxCell id="ac" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=15;arcSize=12;" value="&lt;b&gt;Entrada AC&lt;/b&gt;&lt;br&gt;110/120 VAC" vertex="1">
+          <mxGeometry height="85" width="145" x="55" y="303.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UBb8AfXsieB73mIDppWy-3" edge="1" parent="1" source="switch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="UBb8AfXsieB73mIDppWy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="switch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;Interruptor&lt;/b&gt;&lt;br&gt;SPST 250 VAC / 10 A" vertex="1">
+          <mxGeometry height="85" width="155" x="235" y="303.5" as="geometry" />
+        </mxCell>
+        <mxCell id="transformer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;Transformador&lt;/b&gt;&lt;br&gt;18-0-18 VAC / 5 A / 60 Hz&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Se utilizará una sección de 18 VAC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="115" width="195" x="630" y="288.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rectifier" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;Rectificador&lt;/b&gt;&lt;br&gt;Puente rectificador KBPC3510&lt;br&gt;35 A / 1000 V" vertex="1">
+          <mxGeometry height="115" width="195" x="860" y="288.5" as="geometry" />
+        </mxCell>
+        <mxCell id="filter" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;Etapa de filtrado&lt;/b&gt;&lt;br&gt;Filtro EMI&lt;br&gt;Filtrado capacitivo&lt;br&gt;2 × 22 000 µF / 35 V" vertex="1">
+          <mxGeometry height="135" width="200" x="1090" y="278.5" as="geometry" />
+        </mxCell>
+        <mxCell id="bus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4F3F1;strokeColor=#3D8A80;strokeWidth=2;fontColor=#164E49;fontSize=15;arcSize=12;" value="&lt;b&gt;Bus de alimentación&lt;/b&gt;&lt;br&gt;VIN DC ≈ 24 V" vertex="1">
+          <mxGeometry height="85" width="175" x="1325" y="303.5" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;+12 V / 5 A&lt;/b&gt;&lt;br&gt;LM2678S-12" vertex="1">
+          <mxGeometry height="72" width="185" x="1575" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;+5 V / 5 A&lt;/b&gt;&lt;br&gt;LM2678S-5.0" vertex="1">
+          <mxGeometry height="72" width="185" x="1575" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;+3.3 V / 3 A&lt;/b&gt;&lt;br&gt;LM2596S-3.3" vertex="1">
+          <mxGeometry height="72" width="185" x="1575" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="cm12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=13;arcSize=12;" value="&lt;b&gt;−12 V / 1 A&lt;/b&gt;&lt;br&gt;TPS54560B&lt;br&gt;Configuración inversora" vertex="1">
+          <mxGeometry height="82" width="185" x="1575" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="cvar" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=13;arcSize=12;" value="&lt;b&gt;Variable 1.25–15 V / 3 A&lt;/b&gt;&lt;br&gt;LM2596S-ADJ" vertex="1">
+          <mxGeometry height="76" width="185" x="1575" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="outputs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E5;strokeColor=#C58A37;strokeWidth=2;fontColor=#503914;fontSize=15;spacing=12;arcSize=12;" value="&lt;b&gt;Salidas reguladas&lt;/b&gt;&lt;br&gt;&lt;br&gt;+12 V / 5 A&lt;br&gt;+5 V / 5 A&lt;br&gt;+3.3 V / 3 A&lt;br&gt;−12 V / 1 A&lt;br&gt;1.25–15 V / 3 A" vertex="1">
+          <mxGeometry height="230" width="175" x="1810" y="231" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="ac" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#54758D;strokeWidth=2;endArrow=block;endFill=1;" target="switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="transformer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#54758D;strokeWidth=2;endArrow=block;endFill=1;" target="rectifier">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="rectifier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#54758D;strokeWidth=2;endArrow=block;endFill=1;" target="filter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="filter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#54758D;strokeWidth=2;endArrow=block;endFill=1;" target="bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bus12" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3D8A80;strokeWidth=2;endArrow=block;endFill=1;" target="c12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="166" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3D8A80;strokeWidth=2;endArrow=block;endFill=1;" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="256" />
+            </Array>
+            <mxPoint x="1525" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bus33" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3D8A80;strokeWidth=2;endArrow=block;endFill=1;" target="c33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="346" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="busm12" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3D8A80;strokeWidth=2;endArrow=block;endFill=1;" target="cm12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="441" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="busvar" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3D8A80;strokeWidth=2;endArrow=block;endFill=1;" target="cvar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1525" y="538" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out12" edge="1" parent="1" source="c12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C58A37;strokeWidth=2;endArrow=block;endFill=1;" target="outputs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785" y="166" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out5" edge="1" parent="1" source="c5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C58A37;strokeWidth=2;endArrow=block;endFill=1;" target="outputs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785" y="256" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out33" edge="1" parent="1" source="c33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C58A37;strokeWidth=2;endArrow=block;endFill=1;" target="outputs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785" y="346" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="outm12" edge="1" parent="1" source="cm12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C58A37;strokeWidth=2;endArrow=block;endFill=1;" target="outputs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785" y="441" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="outvar" edge="1" parent="1" source="cvar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C58A37;strokeWidth=2;endArrow=block;endFill=1;" target="outputs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785" y="538" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UBb8AfXsieB73mIDppWy-4" edge="1" parent="1" source="UBb8AfXsieB73mIDppWy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="transformer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UBb8AfXsieB73mIDppWy-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#4F7898;strokeWidth=2;fontColor=#16324F;fontSize=14;arcSize=12;" value="&lt;b&gt;Protecciones&lt;/b&gt;&lt;div&gt;&lt;b&gt;Fusible de entrada&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="155" x="430" y="303.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
